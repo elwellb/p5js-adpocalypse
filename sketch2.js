@@ -1,15 +1,14 @@
 
 //Create variables and Ad image index
 let adIndex = 
-["/assets/surface/AntiAging.png", 
-"/assets/surface/HolidaySale.png", 
-"/assets/surface/LearnCode.png", 
-"/assets/surface/RichGuy.png",
-"/assets/surface/WalterEWhite.png",
-"/assets/surface/VougeVista.png",
-"/assets/surface/PawsBubbleTea.png",
-"/assets/surface/GlobeTrek.png",
-"/assets/surface/SurfaceDeeper1.png"];
+["/assets/deep/AcademicInformation.png", 
+"/assets/deep/Bank.png", 
+"/assets/deep/MedicalRecord.png", 
+"/assets/deep/ScientificReports.png",
+"/assets/deep/SearchEngine.png",
+"/assets/deep/SignedDocument.png",
+"/assets/deep/Subscription.png",
+"/assets/deep/DeepDeeper1.png"];
 let counter = 0;
 
 //Remove Canvas and create a base layer for images
@@ -36,7 +35,7 @@ function setAdPosition(ad) {
   //if too far to left, push it left
   if (adXPos <= adWidth) {
     adXPos += adWidth;
-
+    
   //if too far to right, push it right
   } else if (adXPos >= (windowWidth - adWidth)) {
     adXPos -= adWidth;
@@ -61,7 +60,7 @@ function setAdPosition(ad) {
 function refreshPage() {
 
   //create array of all divs created by randomizeOtherAds()
-  let oldDivs = document.getElementsByClassName("adsCopy");
+  let oldDivs = document.getElementsByClassName("deepAds");
 
   //for each one, set innerHTML to nothing to remove them
   for (let i = 0; i < oldDivs.length; i++) {
@@ -79,13 +78,16 @@ function refreshPageDeeper() {
   counter++;
 
   //replace image in index with new ad
-  adIndex.splice(-1, 1, "/assets/surface/SurfaceDeeper" + (counter + 1) + ".png");
+  adIndex.splice(-1, 1, "/assets/deep/DeepDeeper" + (counter + 1) + ".png");
 
   //console.log(counter);
-
+  if (counter == 4) {
+    let emptyAds = ["/assets/deep/DeepDeeper5.png"];
+    adIndex = emptyAds;
+  }
   //once counter reaches 5, send to deeper level
   if (counter == 5) {
-    location = "index2.html";
+    location = "index3.html";
   }
   
   //create new page of ads and reset page
@@ -104,11 +106,11 @@ function randomizeOtherAds() {
     //create new div so it can be moved freely
     let adCopy = document.createElement("div");
 
-    //set to surfaceAds class
-    adCopy.className = "surfaceAds";
+    //set to adsCopy class
+    adCopy.className = "deepAds";
 
     //if ad is specific one, run refreshPageDeeper() to increase counter
-    if (pickAd == 8) {
+    if (pickAd == adIndex.length-1) {
       adCopy.innerHTML = "<img src = " + adIndex[pickAd] + " width = " + random(150, 400) + "px height = auto onClick = refreshPageDeeper()>"; 
     //if not, just refresh page
     } else {
