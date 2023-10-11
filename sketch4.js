@@ -1,14 +1,14 @@
 
 //Create variables and Ad image index
 let adIndex = 
-["/assets/dark/Blackmail.png", 
-"/assets/dark/DrugPharmacy.png", 
-"/assets/dark/Forum.png", 
-"/assets/dark/GunAd.png",
-"/assets/dark/Hitman4Hire.png",
-"/assets/dark/Identity.png",
-"/assets/dark/Password.png",
-"/assets/dark/RedRoom.png"];
+["./assets/dark/Blackmail.png", 
+"./assets/dark/DrugPharmacy.png", 
+"./assets/dark/Forum.png", 
+"./assets/dark/GunAd.png",
+"./assets/dark/Hitman4Hire.png",
+"./assets/dark/Identity.png",
+"./assets/dark/Password.png",
+"./assets/dark/RedRoom.png"];
 let stage = 0;
 let startClickTime;
 let endClickTime;

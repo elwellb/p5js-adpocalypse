@@ -1,15 +1,15 @@
 
 //Create variables and Ad image index
 let adIndex = 
-["/assets/surface/AntiAging.png", 
-"/assets/surface/HolidaySale.png", 
-"/assets/surface/LearnCode.png", 
-"/assets/surface/RichGuy.png",
-"/assets/surface/WalterEWhite.png",
-"/assets/surface/VougeVista.png",
-"/assets/surface/PawsBubbleTea.png",
-"/assets/surface/GlobeTrek.png",
-"/assets/surface/SurfaceDeeper1.png"];
+["./assets/surface/AntiAging.png", 
+"./assets/surface/HolidaySale.png", 
+"./assets/surface/LearnCode.png", 
+"./assets/surface/RichGuy.png",
+"./assets/surface/WalterEWhite.png",
+"./assets/surface/VougeVista.png",
+"./assets/surface/PawsBubbleTea.png",
+"./assets/surface/GlobeTrek.png",
+"./assets/surface/SurfaceDeeper1.png"];
 let counter = 0;
 let numberOfRefresh = 0;
 

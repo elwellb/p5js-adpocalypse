@@ -1,14 +1,14 @@
 
 //Create variables and Ad image index
 let adIndex = 
-["/assets/deep/AcademicInformation.png", 
-"/assets/deep/Bank.png", 
-"/assets/deep/MedicalRecord.png", 
-"/assets/deep/ScientificReports.png",
-"/assets/deep/SearchEngine.png",
-"/assets/deep/SignedDocument.png",
-"/assets/deep/Subscription.png",
-"/assets/deep/DeepDeeper1.png"];
+["./assets/deep/AcademicInformation.png", 
+"./assets/deep/Bank.png", 
+"./assets/deep/MedicalRecord.png", 
+"./assets/deep/ScientificReports.png",
+"./assets/deep/SearchEngine.png",
+"./assets/deep/SignedDocument.png",
+"./assets/deep/Subscription.png",
+"./assets/deep/DeepDeeper1.png"];
 let counter = 0;
 let popup;
 let numberOfRefresh = 0;
