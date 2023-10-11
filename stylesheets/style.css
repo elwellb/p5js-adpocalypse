@@ -1,0 +1,67 @@
+html, body {
+  margin: 20;
+  padding: 0;
+  
+}
+
+canvas {
+  display: block;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+ 50% {
+    transform: translateY(50px);
+ }
+ 100% {
+    transform: translateY(0px);
+}
+}
+
+@keyframes shakeAndJump {
+  0% {
+    transform: rotateZ(0%);
+    transform: translateY(0px);
+  }
+ 25% {
+    transform: rotateZ(10deg);
+ }
+ 50% {
+    transform: rotateZ(0deg);
+    transform: translateY(50px);
+ }
+ 75% {
+    transform: rotateZ(-10deg);
+ }
+ 100% {
+    transform: rotateZ(0deg);
+    transform: translateY(0px);
+}
+}
+
+@keyframes shakeJumpScale {
+  0% {
+    transform: rotateZ(0%);
+    transform: translateY(0px);
+    transform: scaleX(1), scaleY(1);
+  }
+ 25% {
+    transform: rotateZ(10deg);
+    transform: scaleX(0.7), scaleY(0.7);
+ }
+ 50% {
+    transform: rotateZ(0deg);
+    transform: translateY(50px);
+    transform: scaleX(1), scaleY(1);
+ }
+ 75% {
+    transform: rotateZ(-10deg);
+    transform: scaleX(1.3), scaleY(1.3);
+ }
+ 100% {
+    transform: rotateZ(0deg);
+    transform: translateY(0px);
+}
+}

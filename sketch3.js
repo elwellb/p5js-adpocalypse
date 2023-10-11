@@ -38,7 +38,10 @@ let txt = [
     "SYSTEM ACCESS GRANTED: ADMINISTRATOR PRIVILEGES UNLOCKED",
     "ANTIVIRUS OVERRIDE: MALWARE DEPLOYMENT INITIATED",
     "CIPHER BREAKTHROUGH: ENCRYPTED FILES DECRYPTED",
-    "CRYPTO WALLET COMPROMISED: DIGITAL CURRENCY DRAINING"
+    "CRYPTO WALLET COMPROMISED: DIGITAL CURRENCY DRAINING",
+    "BROWSER: " + navigator.userAgent,
+    "PROCCESORS ACCESSED: 1/" + navigator.hardwareConcurrency,
+    
 ]
 
 function setup() {
@@ -83,3 +86,4 @@ function accessGranted() {
 function nextPage() {
     location = "index4.html"
 }
+
