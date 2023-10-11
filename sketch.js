@@ -86,7 +86,7 @@ function refreshPageDeeper() {
   counter++;
 
   //replace image in index with new ad
-  adIndex.splice(-1, 1, "/assets/surface/SurfaceDeeper" + (counter + 1) + ".png");
+  adIndex.splice(-1, 1, "./assets/surface/SurfaceDeeper" + (counter + 1) + ".png");
 
   //console.log(counter);
 
